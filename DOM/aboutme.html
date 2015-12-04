@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+  <style>
+    listItem {
+      color:red;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+
+   <img id= "picture" src="http://s.fishki.net/upload/post/201506/09/1561355/boi-zahod.jpg">
+
+  <script>
+		var bodys = document.getElementsByTagName('body') 
+		var body = bodys[0]
+		body.style.fontFamily = "ariel, sans-serif"
+		
+		var nickname = document.getElementById("nickname");
+		document.getElementById("nickname").innerHTML = "swiftyy188"
+    
+    var listItem = document.getElementsByTagName('li') 
+
+    for (var i = 0; i < listItem.length; i++){
+      listItem[i].className = "listItem" ;
+    }
+
+    document.getElementById("picture").src = "https://i.ytimg.com/vi/OXv5QiYhM6s/hqdefault.jpg";
+
+
+
+
+	
+  </script>
+
+ </body>
+</html>
+
